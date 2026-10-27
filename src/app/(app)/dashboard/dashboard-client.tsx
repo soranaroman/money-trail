@@ -149,7 +149,7 @@ export function DashboardClient({
           delta={
             deltaVenit === null
               ? undefined
-              : { value: `${Math.abs(deltaVenit)}% vs trim. anterior`, positive: deltaVenit >= 0 }
+              : { percent: deltaVenit, note: "vs trim. anterior", goodWhenUp: true }
           }
         />
         <KpiCard
@@ -158,7 +158,7 @@ export function DashboardClient({
           delta={
             deltaChelt === null
               ? undefined
-              : { value: `${Math.abs(deltaChelt)}% vs trim. anterior`, positive: deltaChelt < 0 }
+              : { percent: deltaChelt, note: "vs trim. anterior", goodWhenUp: false }
           }
         />
         <KpiCard label="Profit net" value={formatEur(profitNet)} subtitle="trimestrul curent" />
