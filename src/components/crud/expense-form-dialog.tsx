@@ -237,7 +237,7 @@ export function ExpenseFormDialog({
               id="ex-descriere"
               name="descriere"
               defaultValue={expense?.descriere}
-              placeholder="ex: Sticlă 6.6 — comandă Vidrios Albatros"
+              placeholder="ex: Sticlă 6.6, comandă Vidrios Albatros"
               required
             />
           </div>
